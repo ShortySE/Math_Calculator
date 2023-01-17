@@ -1,0 +1,34 @@
+﻿<Window x:Class="Appl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Appl"
+        mc:Ignorable="d"
+        Title="Math Calculator" Height="404" Width="326">
+    <Grid>
+        <ComboBox x:Name="Calculate_Options" HorizontalAlignment="Left" Margin="50,55,0,0" VerticalAlignment="Top" Width="206" Height="24" FontSize="13">
+            <ComboBoxItem Content = "No. of sides with Exterior Angle" FontSize="13"></ComboBoxItem>
+            <ComboBoxItem Content = "No. of sides with Interior Angle" FontSize="13"></ComboBoxItem>
+        </ComboBox>
+        
+        <Label Content="To be calculated:" HorizontalAlignment="Left" Margin="50,24,0,0" VerticalAlignment="Top" Width="153"/>
+
+        <!-- Exterior angle -->
+        <TextBox x:Name="Exterior_Angle_Textbox" HorizontalAlignment="Left" Margin="153,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Height="22"/>
+        <Label x:Name="Exterior_Angle_Label" Content="Exterior Angle" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" Height="26" Width="90"/>
+        <!-- Exterior angle -->
+
+        <!-- No. of sides -->
+        <TextBox x:Name="Sides_Textbox" HorizontalAlignment="Left" Margin="153,212,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Height="22"/>
+        <Label x:Name="Sides_Label" Content="No. of sides" HorizontalAlignment="Left" Margin="59,210,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.476,-0.538"/>
+        <!-- No. of sides -->
+        
+        <Button x:Name="Calculate_Btn" Content="Calculate" HorizontalAlignment="Left" Margin="101,258,0,0" VerticalAlignment="Top" Height="29" Width="104" FontSize="12" Click="Calculate_Btn_Click"/>
+        
+        <!-- Interior angle -->
+        <TextBox x:Name="Interior_Angle_Textbox" HorizontalAlignment="Left" Margin="153,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124" Height="22"/>
+        <Label x:Name="Interior_Angle_Label" Content="Interior Angle" HorizontalAlignment="Left" Margin="50,163,0,0" VerticalAlignment="Top" Height="26" Width="90"/>
+        <!-- Interior angle -->
+    </Grid>
+</Window>
